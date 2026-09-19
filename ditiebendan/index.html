@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="地铁笨蛋4是《地铁笨蛋》系列漫画的第四部作品。本站提供地铁笨蛋4高清漫画在线阅读、剧情介绍、角色分析及最新章节更新资讯。">
+    <meta name="keywords" content="地铁笨蛋4,地铁笨蛋漫画,地铁笨蛋4在线阅读,地铁笨蛋4剧情,地铁笨蛋4漫画下载">
+    <title>地铁笨蛋4-《地铁笨蛋》系列漫画在线阅读与剧情解析</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #ff6b6b;
+            --secondary-color: #4ecdc4;
+            --dark-bg: #1a1a2e;
+            --card-bg: #16213e;
+            --text-main: #ffffff;
+            --text-muted: #a0a0a0;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(26, 26, 46, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--primary-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+        }
+
+        nav a {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-box input {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 8px 16px;
+            color: white;
+            outline: none;
+            width: 200px;
+            transition: width 0.3s;
+        }
+
+        .search-box input:focus {
+            width: 240px;
+            border-color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #1a1a2e 0%, #2d1b4e 100%);
+            overflow: hidden;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g fill="%23ffffff" fill-opacity="0.03"><path d="M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z"/></g></svg>');
+            background-size: cover;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .hero-desc {
+            font-size: 18px;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
+            margin-left: 10px;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--secondary-color);
+            color: var(--dark-bg);
+            box-shadow: 0 5px 15px rgba(78, 205, 196, 0.4);
+        }
+
+        /* Navigation Tabs */
+        .nav-tabs {
+            background-color: var(--card-bg);
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .tabs-list {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .tabs-list li a {
+            font-size: 15px;
+            color: var(--text-muted);
+            position: relative;
+            padding-bottom: 5px;
+        }
+
+        .tabs-list li a.active, .tabs-list li a:hover {
+            color: var(--text-main);
+        }
+
+        .tabs-list li a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+
+        /* Main Content Grid */
+        .main-content {
+            padding: 40px 0;
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 24px;
+        }
+
+        .comic-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .comic-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-cover {
+            width: 100%;
+            height: 280px;
+            background-color: #2a2a40;
+            position: relative;
+        }
+        
+        .card-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+
+        .comic-card:hover .card-cover img {
+            opacity: 1;
+        }
+
+        .chapter-tag {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            font-size: 12px;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        .card-info {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-meta {
+            font-size: 12px;
+            color: var(--text-muted);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Featured Section */
+        .featured-section {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 24px;
+            margin-bottom: 60px;
+        }
+
+        .featured-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            min-height: 300px;
+        }
+
+        .featured-img {
+            width: 40%;
+            background-color: #2a2a40;
+        }
+
+        .featured-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .featured-content {
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .featured-title {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .featured-text {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        /* Info/Stats Sidebar */
+        .info-panel {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .info-item:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .info-value {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Chapter List */
+        .chapter-list {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            margin-bottom: 20px;
+            padding-left: 10px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .chapter-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .chapter-table th, .chapter-table td {
+            text-align: left;
+            padding: 12px 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .chapter-table th {
+            color: var(--text-muted);
+            font-weight: normal;
+            font-size: 14px;
+        }
+
+        .chapter-table tr:hover {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        .status-badge {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 5px;
+        }
+
+        .status-new { background-color: #4ecdc4; }
+        .status-old { background-color: #555; }
+
+        /* Footer */
+        footer {
+            background-color: #0f0f1a;
+            padding: 60px 0 20px;
+            margin-top: 60px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col a {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .copyright {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 13px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 32px; }
+            .hero { height: auto; padding: 60px 0; }
+            .featured-section { grid-template-columns: 1fr; }
+            .featured-card { flex-direction: column; }
+            .featured-img { width: 100%; height: 200px; }
+            .nav-tabs { display: none; } /* Simplified for mobile */
+            .tabs-list { display: flex; gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span>⚡</span> 漫画之家
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#">日漫</a></li>
+                    <li><a href="#">韩漫</a></li>
+                    <li><a href="#">国漫</a></li>
+                    <li><a href="#">排行榜</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索漫画...">
+            </div>
+        </div>
+    </header>
+
+    <div class="nav-tabs">
+        <div class="container">
+            <ul class="tabs-list">
+                <li><a href="#" class="active">最新更新</a></li>
+                <li><a href="#">热门推荐</a></li>
+                <li><a href="#">完结作品</a></li>
+                <li><a href="#">地铁笨蛋系列</a></li>
+                <li><a href="#">恋爱喜剧</a></li>
+                <li><a href="#">校园生活</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <span class="badge">第四部</span>
+                <h1>地铁笨蛋4：都市喧嚣下的<br>纯爱新篇章</h1>
+                <p class="hero-desc">《地铁笨蛋4》继续延续前作的轻松风格，讲述主角在拥挤的地铁中与陌生人发生的奇妙邂逅。本季加入了更多职场生活的折射与情感成长的细腻描写，画面精美，剧情紧凑。</p>
+                <div>
+                    <a href="#" class="btn">立即阅读</a>
+                    <a href="#" class="btn btn-outline">加入书架</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container main-content">
+            <div class="featured-section">
+                <article class="featured-card">
+                    <div class="featured-img">
+                        <img src="https://picsum.photos/seed/metro4_cover/600/400" alt="地铁笨蛋4封面">
+                    </div>
+                    <div class="featured-content">
+                        <h2 class="featured-title">关于《地铁笨蛋4》</h2>
+                        <p class="featured-text">
+                            作为备受期待的第四部续作，《地铁笨蛋4》在保持原作幽默基调的同时，深化了人物关系网。故事背景设定在繁华的大都市，主角依然在上下班的通勤路上经历着各种令人啼笑皆非却又温馨感人的小插曲。本作特别邀请了知名画师团队参与绘制，在人物表情和场景细节上有了显著提升。
+                        </p>
+                        <div style="margin-top: auto;">
+                            <span style="font-size: 14px; color: var(--secondary-color);">类型：恋爱喜剧 / 校园 / 都市</span>
+                        </div>
+                    </div>
+                </article>
+
+                <aside class="info-panel">
+                    <h3 style="margin-bottom: 20px;">作品信息</h3>
+                    <div class="info-item">
+                        <div class="info-label">作者</div>
+                        <div class="info-value">Takeshi Oda (虚构)</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">状态</div>
+                        <div class="info-value">连载中</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">单行本</div>
+                        <div class="info-value">第4卷已发售</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">评分</div>
+                        <div class="info-value" style="color: #ffcc00;">★★★★☆ 9.2</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">标签</div>
+                        <div class="info-value" style="font-size: 13px; line-height: 1.5;">
+                            #地铁 #笨蛋 #恋爱 #日常 #治愈
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <h2 class="section-title">最新章节</h2>
+            <div class="grid-layout">
+                <!-- Chapter Cards -->
+                <article class="comic-card">
+                    <div class="card-cover">
+                        <img src="https://picsum.photos/seed/chap41/300/400" alt="地铁笨蛋4 第41话">
+                        <span class="chapter-tag">NEW</span>
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">第41话：早高峰的意外</h3>
+                        <div class="card-meta">
+                            <span>2023-10-15</span>
+                            <span>2.3万次阅读</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="comic-card">
+                    <div class="card-cover">
+                        <img src="https://picsum.photos/seed/chap42/300/400" alt="地铁笨蛋4 第42话">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">第42话：午休的便利店</h3>
+                        <div class="card-meta">
+                            <span>2023-10-12</span>
+                            <span>1.8万次阅读</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="comic-card">
+                    <div class="card-cover">
+                        <img src="https://picsum.photos/seed/chap43/300/400" alt="地铁笨蛋4 第43话">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">第43话：周末的约会</h3>
+                        <div class="card-meta">
+                            <span>2023-10-08</span>
+                            <span>2.5万次阅读</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="comic-card">
+                    <div class="card-cover">
+                        <img src="https://picsum.photos/seed/chap44/300/400" alt="地铁笨蛋4 第44话">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">第44话：意外的告白</h3>
+                        <div class="card-meta">
+                            <span>2023-10-05</span>
+                            <span>3.1万次阅读</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <h2 class="section-title">热门推荐</h2>
+            <div class="grid-layout">
+                <article class="comic-card">
+                    <div class="card-cover">
+                        <img src="https://picsum.photos/seed/rec1/300/400" alt="推荐漫画">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">恋爱偏差值</h3>
+                        <div class="card-meta">
+                            <span>恋爱</span>
+                            <span>热门</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="comic-card">
+                    <div class="card-cover">
+                        <img src="https://picsum.photos/seed/rec2/300/400" alt="推荐漫画">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">我的青春恋爱物语果然有问题</h3>
+                        <div class="card-meta">
+                            <span>轻小说改</span>
+                            <span>完结</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="comic-card">
+                    <div class="card-cover">
+                        <img src="https://picsum.photos/seed/rec3/300/400" alt="推荐漫画">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">辉夜大小姐想让我告白</h3>
+                        <div class="card-meta">
+                            <span>恋爱</span>
+                            <span>连载中</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="comic-card">
+                    <div class="card-cover">
+                        <img src="https://picsum.photos/seed/rec4/300/400" alt="推荐漫画">
+                    </div>
+                    <div class="card-info">
+                        <h3 class="card-title">总之就是非常可爱</h3>
+                        <div class="card-meta">
+                            <span>搞笑</span>
+                            <span>完结</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于我们</h4>
+                    <ul>
+                        <li><a href="#">网站简介</a></li>
+                        <li><a href="#">版权声明</a></li>
+                        <li><a href="#">广告合作</a></li>
+                        <li><a href="#">联系方式</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#">日漫排行榜</a></li>
+                        <li><a href="#">韩漫排行榜</a></li>
+                        <li><a href="#">热门推荐</a></li>
+                        <li><a href="#">最新上架</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>帮助中心</h4>
+                    <ul>
+                        <li><a href="#">阅读指南</a></li>
+                        <li><a href="#">下载APP</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">意见反馈</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <ul>
+                        <li><a href="#">微信公众号</a></li>
+                        <li><a href="#">新浪微博</a></li>
+                        <li><a href="#">Bilibili</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 漫画之家. All Rights Reserved. 本站资源仅供学习交流，请勿用于商业用途。</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
