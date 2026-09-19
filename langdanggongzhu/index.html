@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="浪荡公主宁初H，提供该角色的详细设定、经典剧情回顾、同人创作展示及粉丝交流社区。了解宁初H的性格特点、情感经历及作品中的关键情节。">
+    <meta name="keywords" content="浪荡公主宁初H, 宁初H, 角色设定, 同人作品, 粉丝社区">
+    <title>浪荡公主宁初H-角色设定、剧情解析与同人创作展示</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #8e44ad;
+            --secondary-color: #d2b4de;
+            --accent-color: #f39c12;
+            --text-dark: #2c3e50;
+            --text-light: #7f8c8d;
+            --bg-body: #fdfbf7;
+            --bg-card: #ffffff;
+            --border-radius: 8px;
+            --spacing-unit: 1rem;
+            --max-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-body);
+            background-image: linear-gradient(to bottom, #fdfbf7, #f4ecf7);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-dark);
+            position: relative;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            padding: 6rem 0;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(142, 68, 173, 0.15), transparent 70%);
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--text-dark);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 2.5rem;
+        }
+
+        .cta-group {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.875rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            box-shadow: 0 4px 15px rgba(142, 68, 173, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(142, 68, 173, 0.4);
+        }
+
+        .btn-secondary {
+            background-color: white;
+            color: var(--text-dark);
+            border: 1px solid #e0e0e0;
+        }
+
+        .btn-secondary:hover {
+            background-color: #f8f8f8;
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        /* Character Profile Section */
+        .section-title {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-color);
+            margin: 1rem auto 0;
+            border-radius: 2px;
+        }
+
+        .grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .profile-card {
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            text-align: center;
+            position: sticky;
+            top: 100px;
+        }
+
+        .avatar-placeholder {
+            width: 150px;
+            height: 150px;
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            box-shadow: 0 8px 20px rgba(142, 68, 173, 0.3);
+        }
+
+        .profile-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-title {
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .stat-item h4 {
+            font-size: 1.25rem;
+            color: var(--text-dark);
+        }
+
+        .stat-item p {
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .tag-item {
+            background-color: #f0f0f0;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        .content-area h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .character-intro p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        /* Gallery Grid */
+        .gallery-section {
+            margin-top: 4rem;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-item {
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            background-color: #eee;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 3rem;
+        }
+
+        .gallery-info {
+            padding: 1rem;
+        }
+
+        .gallery-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-info p {
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background-color: white;
+            border-radius: var(--border-radius);
+            padding: 3rem;
+            margin-top: 4rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #eee;
+            padding: 1.5rem 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--primary-color);
+        }
+
+        .faq-answer {
+            color: var(--text-light);
+            display: none;
+            padding-left: 1rem;
+            border-left: 2px solid var(--secondary-color);
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 3rem 0;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .footer-col h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-color);
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-col a {
+            color: #bdc3c7;
+        }
+
+        .footer-col a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background-color: white;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+                padding: 1rem;
+            }
+
+            nav.open {
+                display: block;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero {
+                padding: 4rem 0;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .grid-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-card {
+                position: static;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">浪荡<span>公主</span></a>
+            <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#profile">角色档案</a></li>
+                    <li><a href="#gallery">作品展示</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="tag">热门角色</span>
+                <h1>浪荡公主宁初H</h1>
+                <p>探索宁初H这一复杂角色的内心世界，了解她在不同故事线中的性格演变与情感纠葛。</p>
+                <div class="cta-group">
+                    <a href="#profile" class="btn btn-primary">查看档案</a>
+                    <a href="#gallery" class="btn btn-secondary">浏览作品</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Character Profile Section -->
+        <section id="profile" class="container">
+            <h2 class="section-title">角色档案</h2>
+            <div class="grid-layout">
+                <!-- Sidebar Profile -->
+                <aside class="profile-card">
+                    <div class="avatar-placeholder">宁</div>
+                    <h3 class="profile-name">宁初H</h3>
+                    <p class="profile-title">皇室成员 / 叛逆公主</p>
+                    
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h4>18+</h4>
+                            <p>核心受众</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>CP</h4>
+                            <p>多线发展</p>
+                        </div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag-item">傲娇</span>
+                        <span class="tag-item">腹黑</span>
+                        <span class="tag-item">重生</span>
+                        <span class="tag-item">破镜重圆</span>
+                        <span class="tag-item">救赎</span>
+                    </div>
+                </aside>
+
+                <!-- Content Area -->
+                <article class="content-area">
+                    <h2>关于宁初H</h2>
+                    <div class="character-intro">
+                        <p>宁初H是许多故事中备受关注的核心人物。她通常出身于显赫的皇室或贵族家庭，却因为家族变故或个人追求，走上了与常人截然不同的道路。其名字中的“H”往往暗示了她在故事中复杂的情感关系或特定的剧情分支（如Happy Ending或特定的同人衍生向）。</p>
+                        <p>宁初H的性格特征鲜明，既有着身为上位者的傲气与尊严，又隐藏着对自由与真爱的极度渴望。在面对命运的捉弄时，她展现出了惊人的韧性。她不再是被动的接受者，而是主动的破局者。在故事的高潮部分，宁初H往往需要做出艰难的抉择，这些抉择不仅改变了自己的命运，也深刻影响了周围人的结局。</p>
+                        <p>她的魅力在于那种“浪荡”表象下的深情。看似不羁、游戏人间，实则内心极度缺乏安全感，渴望一个能真正看懂她、接纳她的人。这种反差萌是宁初H这一角色最吸引人的地方，也是粉丝们津津乐道的话题。</p>
+                    </div>
+
+                    <h2>经典剧情线</h2>
+                    <div class="character-intro">
+                        <p>在早期的剧情设定中，宁初H常因误会或家族联姻而陷入困境。她可能会选择出逃，或者以另一种身份重新进入男主的生活。随着剧情推进，她与男主之间的羁绊逐渐加深，从最初的互相试探、互相利用，转变为生死相依的伴侣。</p>
+                        <p>宁初H的故事线往往伴随着“救赎”的主题。她不仅是被拯救的对象，也是拯救者。在特定的剧情分支（H向）中，她彻底释放了内心的压抑，不再受世俗礼教的束缚，展现了最真实、最狂野的一面。这种剧情走向满足了读者对于情感宣泄和极致浪漫的想象。</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="container gallery-section">
+            <h2 class="section-title">作品与同人展示</h2>
+            <div class="gallery-grid">
+                <article class="gallery-item">
+                    <div class="gallery-img" style="background: linear-gradient(45deg, #a18cd1 0%, #fbc2eb 100%);">🎨</div>
+                    <div class="gallery-info">
+                        <h3>宫廷夜宴</h3>
+                        <p>展现宁初H在权谋斗争中的优雅姿态</p>
+                    </div>
+                </article>
+                <article class="gallery-item">
+                    <div class="gallery-img" style="background: linear-gradient(45deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);">🌹</div>
+                    <div class="gallery-info">
+                        <h3>雨中告白</h3>
+                        <p>情感爆发的瞬间，眼神中的深情</p>
+                    </div>
+                </article>
+                <article class="gallery-item">
+                    <div class="gallery-img" style="background: linear-gradient(45deg, #84fab0 0%, #8fd3f4 100%);">⚔️</div>
+                    <div class="gallery-info">
+                        <h3>战场英姿</h3>
+                        <p>换上戎装后的英气逼人</p>
+                    </div>
+                </article>
+                <article class="gallery-item">
+                    <div class="gallery-img" style="background: linear-gradient(45deg, #fccb90 0%, #d57eeb 100%);">🌙</div>
+                    <div class="gallery-info">
+                        <h3>静谧时刻</h3>
+                        <p>卸下防备后的孤独与脆弱</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="container">
+            <h2 class="section-title">常见问题</h2>
+            <div class="faq-section">
+                <div class="faq-item">
+                    <div class="faq-question">宁初H通常出现在什么类型的作品中？</div>
+                    <div class="faq-answer">
+                        <p>宁初H主要出现在架空言情、宫廷权谋以及现代都市情感类的故事中。特别是在涉及重生、复仇或豪门恩怨的题材里，她作为核心女主角出现的频率较高。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">“H”在这个名字中代表什么意思？</div>
+                    <div class="faq-answer">
+                        <p>在宁初H这个名字中，“H”通常具有双重含义。它可能是Happy Ending的缩写，代表故事的某种美好走向；也可能是特定同人创作或衍生作品中的代号，指代该角色在特定剧情分支下的状态。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">如何找到更多关于宁初H的同人创作？</div>
+                    <div class="faq-answer">
+                        <p>您可以关注相关的二次元社区、小说论坛或绘画平台。在这些平台上，以“宁初H”为关键词搜索，通常能找到大量粉丝绘制的插画、撰写的衍生小说以及剧情解析文章。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>浪荡公主宁初H</h4>
+                <p style="color: #bdc3c7; font-size: 0.9rem;">
+                    本站致力于为粉丝提供最全面的角色资料与作品展示平台。尊重原创，禁止未经授权的商业用途。
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>快速链接</h4>
+                <ul>
+                    <li><a href="#">角色设定</a></li>
+                    <li><a href="#">同人图库</a></li>
+                    <li><a href="#">剧情解析</a></li>
+                    <li><a href="#">加入社区</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>联系我们</h4>
+                <ul>
+                    <li><a href="#">意见反馈</a></li>
+                    <li><a href="#">投稿指南</a></li>
+                    <li><a href="#">版权声明</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 宁初H粉丝展示平台. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.querySelector('.mobile-menu-btn');
+        const nav = document.querySelector('#main-nav');
+
+        menuBtn.addEventListener('click', () => {
+            nav.classList.toggle('open');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('open');
+            });
+        });
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
