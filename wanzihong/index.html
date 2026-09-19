@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>万子红 - 红木家具鉴赏与选购指南</title>
+    <meta name="description" content="万子红红木家具官方网站，提供明清古典与现代简约红木家具的鉴赏、选购指南、保养知识及品牌介绍。致力于传承中式雅致生活，打造高品质家居空间。">
+    <meta name="keywords" content="万子红, 红木家具, 明清家具, 中式家具, 仿古家具, 红木选购, 红木保养">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #8B4513;
+            --primary-dark: #5D2906;
+            --accent-color: #D4AF37;
+            --text-main: #333333;
+            --text-light: #666666;
+            --bg-light: #F9F8F6;
+            --bg-white: #FFFFFF;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+            --border-radius: 4px;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-light);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section {
+            padding: 4rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: var(--primary-dark);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--bg-white);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+            margin-left: 5px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 1rem;
+            color: var(--text-main);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .header-cta {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: var(--border-radius);
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .header-cta:hover {
+            background-color: var(--primary-dark);
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 600px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://picsum.photos/seed/woodwork/1920/1080.jpg') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+            animation: fadeIn Up 1s ease-out;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: var(--primary-dark);
+        }
+
+        .btn-primary:hover {
+            background-color: #bfa03b;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+            margin-left: 1rem;
+        }
+
+        .btn-outline:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+
+        /* Features Section */
+        .features {
+            background-color: var(--bg-white);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem;
+            border: 1px solid #eee;
+            border-radius: var(--border-radius);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            box-shadow: var(--shadow);
+            border-color: transparent;
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 0.8rem;
+            color: var(--text-main);
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Product Showcase */
+        .showcase {
+            background-color: var(--bg-light);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: var(--bg-white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            box-shadow: var(--shadow);
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            height: 240px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        .product-info {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-category {
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+        }
+
+        .product-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #f0f0f0;
+            padding-top: 1rem;
+        }
+
+        .product-price {
+            font-size: 1.1rem;
+            color: var(--primary-dark);
+            font-weight: 700;
+        }
+
+        .btn-sm {
+            padding: 0.4rem 1rem;
+            font-size: 0.85rem;
+            border-radius: 3px;
+        }
+
+        /* Knowledge Base */
+        .knowledge {
+            background-color: var(--bg-white);
+        }
+
+        .knowledge-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+
+        .knowledge-list article {
+            display: flex;
+            gap: 1.5rem;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .knowledge-list article:last-child {
+            border-bottom: none;
+        }
+
+        .knowledge-date {
+            min-width: 80px;
+            text-align: center;
+            padding-right: 1.5rem;
+            border-right: 1px solid #eee;
+        }
+
+        .date-day {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            line-height: 1;
+            display: block;
+        }
+
+        .date-month {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            text-transform: uppercase;
+        }
+
+        .knowledge-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .knowledge-content h4 a:hover {
+            color: var(--primary-color);
+        }
+
+        .knowledge-content p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .sidebar h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        .sidebar-list li {
+            margin-bottom: 0.8rem;
+        }
+
+        .sidebar-list a {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            display: block;
+        }
+
+        .sidebar-list a:hover {
+            color: var(--primary-color);
+            padding-left: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c2c2c;
+            color: #ccc;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h4 {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #444;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            nav {
+                display: none; /* Simplified for mobile demo */
+            }
+
+            .knowledge-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .knowledge-date {
+                border-right: none;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 0.5rem;
+                margin-bottom: 0.5rem;
+                min-width: auto;
+                text-align: left;
+            }
+
+            .knowledge-list article {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">万子红 <span>WANZIHONG</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">首页</a></li>
+                    <li><a href="#products">经典系列</a></li>
+                    <li><a href="#about">品牌故事</a></li>
+                    <li><a href="#knowledge">红木百科</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="header-cta">预约鉴赏</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>万子红：匠心独运，传世红木</h1>
+                <p>传承百年榫卯技艺，融合现代审美。每一件万子红家具，都是时光沉淀下的艺术品，为您的家增添一份典雅与厚重。</p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn btn-primary">浏览系列</a>
+                    <a href="#knowledge" class="btn btn-outline">了解红木</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="section features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">为什么选择万子红</h2>
+                    <p class="section-subtitle">甄选名贵木材，严苛工艺标准，只为呈现极致品质</p>
+                </div>
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">榫卯</div>
+                        <h3>传统榫卯结构</h3>
+                        <p>拒绝胶水粘合，坚持纯手工榫卯连接，结构稳固，历久弥新，尽显东方智慧。</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">金丝楠</div>
+                        <h3>名贵木材甄选</h3>
+                        <p>精选小叶紫檀、大红酸枝、金丝楠等顶级红木原料，纹理优美，色泽温润。</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">雕刻</div>
+                        <h3>非遗手工雕刻</h3>
+                        <p>聘请国家级雕刻大师，一凿一刻，将吉祥寓意融入细节，赋予家具生命。</p>
+                    </article>
+                    <article class="feature-card">
+                        <div class="feature-icon">环保</div>
+                        <h3>环保漆面工艺</h3>
+                        <p>采用天然大漆与环保清漆，无甲醛污染，保护木材纹理，健康守护家庭。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Showcase -->
+        <section id="products" class="section showcase">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">经典臻品系列</h2>
+                    <p class="section-subtitle">从书房雅致到客厅大气，全方位满足中式家居需求</p>
+                </div>
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://picsum.photos/seed/chair/400/300.jpg" alt="万子红圈椅">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">客厅系列</span>
+                            <h3 class="product-title">明式圈椅</h3>
+                            <p class="product-desc">采用老红木制作，线条流畅，弧度优美，坐感舒适，是古典家具的经典代表。</p>
+                            <div class="product-footer">
+                                <span class="product-price">¥ 12,800</span>
+                                <a href="#" class="btn btn-sm btn-primary">查看详情</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 2 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://picsum.photos/seed/bed/400/300.jpg" alt="万子红雕花大床">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">卧室系列</span>
+                            <h3 class="product-title">五福临门雕花大床</h3>
+                            <p class="product-desc">床头采用浮雕工艺，寓意吉祥，床腿稳固，打造尊贵睡眠空间。</p>
+                            <div class="product-footer">
+                                <span class="product-price">¥ 35,600</span>
+                                <a href="#" class="btn btn-sm btn-primary">查看详情</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 3 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://picsum.photos/seed/desk/400/300.jpg" alt="万子红书案">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">书房系列</span>
+                            <h3 class="product-title">黄花梨大画案</h3>
+                            <p class="product-desc">宽大桌面，便于挥毫泼墨，榫卯结构严丝合缝，尽显文人雅士风范。</p>
+                            <div class="product-footer">
+                                <span class="product-price">¥ 28,900</span>
+                                <a href="#" class="btn btn-sm btn-primary">查看详情</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Product 4 -->
+                    <article class="product-card">
+                        <div class="product-image">
+                            <img src="https://picsum.photos/seed/cabinet/400/300.jpg" alt="万子红顶箱柜">
+                        </div>
+                        <div class="product-info">
+                            <span class="product-category">储物系列</span>
+                            <h3 class="product-title">宫廷顶箱立柜</h3>
+                            <p class="product-desc">气势恢宏，储物空间巨大，红木色泽沉稳大气，是传家之选。</p>
+                            <div class="product-footer">
+                                <span class="product-price">¥ 48,000</span>
+                                <a href="#" class="btn btn-sm btn-primary">查看详情</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Knowledge Base -->
+        <section id="knowledge" class="section knowledge">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">红木百科与资讯</h2>
+                    <p class="section-subtitle">深入了解红木文化，掌握选购与保养的专业知识</p>
+                </div>
+                <div class="knowledge-grid">
+                    <div class="knowledge-list">
+                        <article>
+                            <div class="knowledge-date">
+                                <span class="date-day">15</span>
+                                <span class="date-month">Oct</span>
+                            </div>
+                            <div class="knowledge-content">
+                                <h4><a href="#">如何辨别真假小叶紫檀？专家教你三招</a></h4>
+                                <p>市场上小叶紫檀鱼龙混杂，通过看棕眼、闻气味、掂重量三个简单步骤，即可快速辨别真伪。</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="knowledge-date">
+                                <span class="date-day">08</span>
+                                <span class="date-month">Oct</span>
+                            </div>
+                            <div class="knowledge-content">
+                                <h4><a href="#">新红木家具如何保养？日常护理全攻略</a></h4>
+                                <p>红木家具喜温润忌干燥，避免阳光直射，定期使用专用木蜡油保养，能延长家具使用寿命。</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="knowledge-date">
+                                <span class="date-day">28</span>
+                                <span class="date-month">Sep</span>
+                            </div>
+                            <div class="knowledge-content">
+                                <h4><a href="#">明清家具的榫卯结构：中国古建筑的灵魂</a></h4>
+                                <p>榫卯结构不使用一钉一胶，完全依靠木材自身的凹凸结合，体现了中国古人极高的智慧。</p>
+                            </div>
+                        </article>
+                    </div>
+                    <aside class="sidebar">
+                        <h3>热门分类</h3>
+                        <ul class="sidebar-list">
+                            <li><a href="#">小叶紫檀</a></li>
+                            <li><a href="#">大红酸枝</a></li>
+                            <li><a href="#">海南黄花梨</a></li>
+                            <li><a href="#">缅甸花梨</a></li>
+                            <li><a href="#">老挝红酸枝</a></li>
+                            <li><a href="#">新中式家具</a></li>
+                        </ul>
+                        <h3 style="margin-top: 2rem;">选购指南</h3>
+                        <ul class="sidebar-list">
+                            <li><a href="#">红木家具选购注意事项</a></li>
+                            <li><a href="#">红木家具价格参考</a></li>
+                            <li><a href="#">红木家具品牌排行</a></li>
+                            <li><a href="#">红木家具保养误区</a></li>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section" style="background-color: var(--primary-color); color: white; text-align: center;">
+            <div class="container">
+                <h2 style="font-size: 2rem; margin-bottom: 1rem;">定制您的专属红木空间</h2>
+                <p style="margin-bottom: 2rem; opacity: 0.9;">万子红提供上门测量、设计及安装服务，让每一件家具都完美契合您的家居环境。</p>
+                <a href="#contact" class="btn" style="background-color: white; color: var(--primary-color);">立即咨询</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>万子红 WANZIHONG</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.8; color: #999;">
+                        万子红致力于传承中国传统红木家具文化，以精湛的工艺和优良的品质，为全球华人家庭提供典雅的家居生活体验。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#home">回到首页</a></li>
+                        <li><a href="#products">产品中心</a></li>
+                        <li><a href="#about">品牌故事</a></li>
+                        <li><a href="#knowledge">红木百科</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系方式</h4>
+                    <ul>
+                        <li>电话：400-888-6666</li>
+                        <li>邮箱：service@wanzihong.com</li>
+                        <li>地址：中国·红木家具之都·仙游</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>关注我们</h4>
+                    <div style="display: flex; gap: 10px;">
+                        <a href="#" style="background: #444; padding: 8px; border-radius: 4px; color: white;">微信</a>
+                        <a href="#" style="background: #444; padding: 8px; border-radius: 4px; color: white;">微博</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 万子红红木家具有限公司 版权所有 | 闽ICP备12345678号</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
