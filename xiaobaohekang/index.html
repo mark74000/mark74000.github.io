@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小宝和康熙-宫廷秘闻与皇子成长影像志</title>
+    <meta name="description" content="小宝和康熙专题页面，汇集历史资料、影视作品解析及宫廷生活图鉴，深度探讨清宫背景下的少年情谊与历史变迁。">
+    <meta name="keywords" content="小宝和康熙,康熙,李卫,清宫剧,历史人物,影视解说">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #8E354A; /* 宫廷红 */
+            --secondary-color: #D4AF37; /* 鎏金 */
+            --bg-color: #FDFBF7; /* 宣纸白 */
+            --text-main: #2C2C2C;
+            --text-light: #666;
+            --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "SimSun", serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 顶部导航 */
+        header {
+            background: #fff;
+            border-bottom: 2px solid var(--primary-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            font-size: 14px;
+            color: var(--text-light);
+            font-weight: normal;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 16px;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        /* Hero 区域 */
+        .hero {
+            background: linear-gradient(rgba(142, 53, 74, 0.8), rgba(142, 53, 74, 0.6)), url('https://picsum.photos/seed/royal/1600/600') no-repeat center center/cover;
+            color: #fff;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            font-family: "Songti SC", serif;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .hero-tags {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .tag {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            backdrop-filter: blur(4px);
+        }
+
+        /* 主要内容网格 */
+        .main-content {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 28px;
+            color: var(--primary-color);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary-color);
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        /* 卡片样式 */
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .card-img {
+            height: 200px;
+            background-color: #ddd;
+            overflow: hidden;
+        }
+
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .card:hover .card-img img {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-meta {
+            font-size: 12px;
+            color: var(--text-light);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .card-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: var(--text-main);
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 8px 20px;
+            background-color: var(--primary-color);
+            color: #fff;
+            border-radius: 4px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #6e2a3d;
+        }
+
+        /* 角色侧边栏 */
+        .sidebar {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            height: fit-content;
+        }
+
+        .sidebar h3 {
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 10px;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .character-list li {
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .character-list li:last-child {
+            border-bottom: none;
+        }
+
+        .char-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            background-color: #eee;
+            object-fit: cover;
+        }
+
+        .char-info h4 {
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .char-info p {
+            font-size: 12px;
+            color: var(--text-light);
+        }
+
+        /* 专题板块 */
+        .feature-section {
+            background-color: #EFECE5;
+            padding: 60px 0;
+            margin-top: 60px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .feature-content h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: var(--text-main);
+        }
+
+        .feature-list li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .feature-list li::before {
+            content: '✦';
+            color: var(--secondary-color);
+            margin-right: 10px;
+            font-size: 18px;
+            line-height: 1.2;
+        }
+
+        .feature-img img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #2C2C2C;
+            color: #aaa;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+
+            nav ul {
+                margin-top: 15px;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .grid-3 {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-img {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 顶部导航 -->
+    <header>
+        <div class="container nav-wrapper">
+            <div class="logo">
+                小宝和康熙 <span>Historical Archives</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#history">历史背景</a></li>
+                    <li><a href="#characters">人物志</a></li>
+                    <li><a href="#media">影视作品</a></li>
+                    <li><a href="#gallery">宫廷图鉴</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 首屏 Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>小宝与康熙：清宫深处的少年羁绊</h1>
+            <p>探寻历史长河中关于“小宝”与康熙皇帝之间那段鲜为人知的少年往事，从影视演绎到正史考据，全方位还原历史现场。</p>
+            <div class="hero-tags">
+                <span class="tag">#少年成长</span>
+                <span class="tag">#宫廷秘闻</span>
+                <span class="tag">#历史考据</span>
+                <span class="tag">#影视赏析</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 主要内容区 -->
+    <main class="container main-content">
+        
+        <!-- 核心栏目：人物与关系 -->
+        <section id="characters" class="characters-section">
+            <div class="section-title">
+                <h2>核心人物图谱</h2>
+            </div>
+            <div class="grid-3">
+                <!-- 康熙 -->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="https://picsum.photos/seed/kangxi/400/250" alt="康熙画像">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">皇帝 / 四皇子</div>
+                        <h3 class="card-title">康熙大帝</h3>
+                        <p class="card-text">爱新觉罗·玄烨，清朝第四位皇帝。在位61年，是中国历史上在位时间最长的皇帝。少年时期经历鳌拜专权，后亲政并平定三藩，开创了康乾盛世。</p>
+                        <a href="#" class="btn">查看生平</a>
+                    </div>
+                </article>
+
+                <!-- 小宝 -->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="https://picsum.photos/seed/xiaobao/400/250" alt="小宝画像">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">义弟 / 狩猎伴读</div>
+                        <h3 class="card-title">小宝</h3>
+                        <p class="card-text">历史原型通常指康熙年间的伴读或宗室少年。在影视改编中，常被塑造为机智幽默、与康熙情同手足的少年形象，是皇子成长路上的重要见证者。</p>
+                        <a href="#" class="btn">人物档案</a>
+                    </div>
+                </article>
+
+                <!-- 李卫 (关联人物) -->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="https://picsum.photos/seed/liwei/400/250" alt="李卫画像">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-meta">包衣奴才 / 能臣</div>
+                        <h3 class="card-title">李卫</h3>
+                        <p class="card-text">清朝名臣，以执法如山、不畏权贵著称。在“小宝和康熙”相关的民间故事与影视作品中，常作为康熙身边的得力助手或小宝的引路人出现。</p>
+                        <a href="#" class="btn">历史评价</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 侧边栏与专题 -->
+        <div class="grid-3" style="grid-template-columns: 2fr 1fr; margin-top: 40px;">
+            <!-- 左侧：深度文章 -->
+            <section class="content-area">
+                <div class="section-title" style="text-align: left;">
+                    <h2>历史与影像的交织</h2>
+                </div>
+                
+                <article style="margin-bottom: 40px;">
+                    <h3 style="font-size: 20px; margin-bottom: 10px; color: var(--primary-color);">从《鹿鼎记》到清宫正史：小宝形象的演变</h3>
+                    <p style="color: #555; margin-bottom: 15px;">提到“小宝”，大众首先联想到的往往是金庸先生笔下的韦小宝。然而，在“小宝和康熙”这一特定主题的搜索中，更多用户关注的是历史上康熙与宗室少年之间真实存在的君臣、兄弟情谊。</p>
+                    <p style="color: #555; margin-bottom: 20px;">本文将梳理影视剧中对于“少年康熙”与“伴读小宝”这一设定的艺术加工，对比正史记载，探讨这一形象在清朝宫廷文化背景下的象征意义。</p>
+                    <a href="#" style="color: var(--primary-color); font-weight: bold;">阅读全文 &rarr;</a>
+                </article>
+
+                <article>
+                    <h3 style="font-size: 20px; margin-bottom: 10px; color: var(--primary-color);">康熙六下江南与少年游历</h3>
+                    <p style="color: #555; margin-bottom: 15px;">康熙皇帝在位期间曾多次巡视江南。对于年轻的康熙而言，这不仅是巡视民情，更是开阔眼界、历练政务的重要过程。在这一背景下，许多关于少年康熙与侍从（即“小宝”类角色）的传说便应运而生。</p>
+                    <a href="#" style="color: var(--primary-color); font-weight: bold;">阅读全文 &rarr;</a>
+                </article>
+            </section>
+
+            <!-- 右侧：人物列表 -->
+            <aside class="sidebar">
+                <h3>相关历史人物</h3>
+                <ul class="character-list">
+                    <li>
+                        <img src="https://picsum.photos/seed/pu'er/100/100" alt="胤禔" class="char-avatar">
+                        <div class="char-info">
+                            <h4>皇长子胤禔</h4>
+                            <p>直郡王</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://picsum.photos/seed/yinsi/100/100" alt="胤禩" class="char-avatar">
+                        <div class="char-info">
+                            <h4>皇八子胤禩</h4>
+                            <p>廉亲王</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://picsum.photos/seed/yongzheng/100/100" alt="胤禛" class="char-avatar">
+                        <div class="char-info">
+                            <h4>皇四子胤禛</h4>
+                            <p>雍正帝</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://picsum.photos/seed/wei/100/100" alt="年羹尧" class="char-avatar">
+                        <div class="char-info">
+                            <h4>年羹尧</h4>
+                            <p>抚远大将军</p>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+    </main>
+
+    <!-- 深度专题板块 -->
+    <section class="feature-section">
+        <div class="container feature-grid">
+            <div class="feature-content">
+                <h2>关键词背后的文化解读</h2>
+                <p style="margin-bottom: 20px; color: #555;">“小宝和康熙”不仅是一个历史人物组合，更代表了清宫剧中常见的“主仆情”、“君臣义”以及“少年成长”的叙事模式。</p>
+                <ul class="feature-list">
+                    <li><strong>影视化呈现：</strong> 多部清宫剧通过虚构的伴读角色（如《少年康熙》等），丰富了康熙早年的性格侧面，展现了其从懵懂少年到英明君主的心理转变。</li>
+                    <li><strong>历史原型：</strong> 历史上的康熙在少年时期确实有贴身侍卫和伴读，他们陪伴康熙处理政务、打猎，是清朝皇室教育制度下的产物。</li>
+                    <li><strong>文化符号：</strong> 这种“小宝”形象往往被赋予机智、忠诚的特质，与康熙的沉稳、英明形成互补，成为观众喜爱的经典CP模式。</li>
+                </ul>
+            </div>
+            <div class="feature-img">
+                <img src="https://picsum.photos/seed/oldchina/600/400" alt="清代宫廷生活">
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 小宝和康熙专题页. 仅供历史文化研究参考.</p>
+            <p>本站内容基于历史资料整理，部分情节为影视艺术加工，请勿与正史混淆。</p>
+        </div>
+    </footer>
+
+</body>
+</html>
