@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="愤怒的小鸟卡通动漫 - 提供红鸟、黄鸟、黑鸟等角色形象介绍、经典关卡攻略、同人绘画欣赏及主题周边资讯。">
+    <meta name="keywords" content="愤怒的小鸟卡通动漫,红鸟,绿猪,游戏攻略,卡通形象,休闲游戏">
+    <title>愤怒的小鸟卡通动漫 - 角色图鉴与经典关卡攻略</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-red: #ff4757;
+            --primary-yellow: #ffa502;
+            --primary-green: #2ed573;
+            --primary-dark: #2f3542;
+            --bg-light: #f1f2f6;
+            --text-main: #2f3542;
+            --text-light: #747d8c;
+            --card-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            --radius: 12px;
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary-red);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-main);
+            position: relative;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-red);
+        }
+
+        nav a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -24px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--primary-red);
+        }
+
+        .search-btn {
+            background: var(--bg-light);
+            border: none;
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #ff6b81 0%, #ff4757 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background-image: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 10%);
+            background-size: 30px 30px;
+            opacity: 0.3;
+            animation: moveBackground 20s linear infinite;
+        }
+
+        @keyframes moveBackground {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(30px, 30px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .hero-tags {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: rgba(255,255,255,0.2);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 30px;
+        }
+
+        /* Character Grid */
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-left: 5px solid var(--primary-red);
+            padding-left: 15px;
+        }
+
+        .character-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: var(--radius);
+            overflow: hidden;
+            box-shadow: var(--card-shadow);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .card-img-wrapper {
+            height: 180px;
+            background-color: #eee;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .card:hover .card-img {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 15px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .card-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            border-top: 1px solid #eee;
+            padding-top: 10px;
+        }
+
+        .type-badge {
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .type-bird { background: #ffeaa7; color: #d35400; }
+        .type-pig { background: #55efc4; color: #00b894; }
+        .type-object { background: #a29bfe; color: #6c5ce7; }
+
+        /* Sidebar */
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .sidebar-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: var(--radius);
+            box-shadow: var(--card-shadow);
+        }
+
+        .rank-list li {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #f1f2f6;
+        }
+
+        .rank-list li:last-child {
+            border-bottom: none;
+        }
+
+        .rank-num {
+            width: 25px;
+            height: 25px;
+            background: #eee;
+            color: #666;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-right: 12px;
+        }
+
+        .rank-list li:nth-child(1) .rank-num { background: #ff4757; color: white; }
+        .rank-list li:nth-child(2) .rank-num { background: #ffa502; color: white; }
+        .rank-list li:nth-child(3) .rank-num { background: #2ed573; color: white; }
+
+        .rank-title {
+            flex-grow: 1;
+            font-size: 0.95rem;
+        }
+
+        .rank-score {
+            color: var(--primary-red);
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .tips-box {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #1565c0;
+            margin-top: 15px;
+        }
+
+        /* Featured Section */
+        .featured-section {
+            background: #fff;
+            padding: 40px 20px;
+            margin-top: 20px;
+            border-radius: var(--radius);
+            box-shadow: var(--card-shadow);
+        }
+
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .featured-item {
+            position: relative;
+            border-radius: var(--radius);
+            overflow: hidden;
+            height: 200px;
+            cursor: pointer;
+        }
+
+        .featured-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s;
+        }
+
+        .featured-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .featured-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+        }
+
+        .featured-overlay h3 {
+            font-size: 1rem;
+            margin-bottom: 5px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-dark);
+            color: #a4b0be;
+            padding: 50px 20px 20px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-red);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                height: auto;
+                padding: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+                margin-top: 15px;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .featured-item {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav-container">
+        <a href="#" class="logo">
+            <span>🐦</span> 愤怒的小鸟
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">首页</a></li>
+                <li><a href="#">角色图鉴</a></li>
+                <li><a href="#">关卡攻略</a></li>
+                <li><a href="#">同人社区</a></li>
+                <li><a href="#">周边资讯</a></li>
+            </ul>
+        </nav>
+        <button class="search-btn">🔍 搜索</button>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>愤怒的小鸟卡通动漫</h1>
+            <p>探索红鸟的复仇之旅，了解经典角色背后的故事与游戏机制。</p>
+            <div class="hero-tags">
+                <span class="tag">#休闲游戏</span>
+                <span class="tag">#益智解谜</span>
+                <span class="tag">#物理引擎</span>
+                <span class="tag">#童年回忆</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Left Column: Content -->
+        <div class="content-area">
+            <section>
+                <div class="section-title">
+                    <h2>经典角色图鉴</h2>
+                </div>
+                <div class="character-grid">
+                    <article class="card">
+                        <div class="card-img-wrapper">
+                            <img src="https://picsum.photos/seed/redbird/400/300" alt="红鸟" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">红鸟</h3>
+                            <p class="card-desc">主角团队的首领，性格勇敢但有时冲动。它拥有最高的飞行速度，是物理攻击的首选。</p>
+                            <div class="card-meta">
+                                <span class="type-badge type-bird">鸟类</span>
+                                <span>速度: ★★★★☆</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-img-wrapper">
+                            <img src="https://picsum.photos/seed/yellowbird/400/300" alt="黄鸟" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">黄鸟</h3>
+                            <p class="card-desc">性格活泼好动，擅长在空中加速。在弹射过程中点击屏幕，它可以瞬间变成炸弹鸟。</p>
+                            <div class="card-meta">
+                                <span class="type-badge type-bird">鸟类</span>
+                                <span>力量: ★★★☆☆</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-img-wrapper">
+                            <img src="https://picsum.photos/seed/blackbird/400/300" alt="黑鸟" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">黑鸟</h3>
+                            <p class="card-desc">沉稳的大个子，体重大，撞击后会发生剧烈爆炸。是摧毁坚固建筑物的最佳选择。</p>
+                            <div class="card-meta">
+                                <span class="type-badge type-bird">鸟类</span>
+                                <span>破坏: ★★★★★</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-img-wrapper">
+                            <img src="https://picsum.photos/seed/pig/400/300" alt="绿猪" class="card-img">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">绿猪</h3>
+                            <p class="card-desc">憨厚可爱的反派角色，喜欢偷吃鸟蛋。虽然看起来无害，但建造的防御工事非常坚固。</p>
+                            <div class="card-meta">
+                                <span class="type-badge type-pig">反派</span>
+                                <span>防御: ★★★★☆</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="featured-section">
+                <div class="section-title">
+                    <h2>热门关卡与攻略</h2>
+                </div>
+                <div class="featured-grid">
+                    <div class="featured-item">
+                        <img src="https://picsum.photos/seed/level1/400/300" alt="第1-10关">
+                        <div class="featured-overlay">
+                            <h3>第1-10关：新手引导</h3>
+                            <p>基础弹射技巧教学</p>
+                        </div>
+                    </div>
+                    <div class="featured-item">
+                        <img src="https://picsum.photos/seed/level2/400/300" alt="第25-30关">
+                        <div class="featured-overlay">
+                            <h3>第25-30关：建筑挑战</h3>
+                            <p>利用环境与物理特性</p>
+                        </div>
+                    </div>
+                    <div class="featured-item">
+                        <img src="https://picsum.photos/seed/level3/400/300" alt="第50关：超级大师">
+                        <div class="featured-overlay">
+                            <h3>第50关：超级大师</h3>
+                            <p>完美通关技巧解析</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Right Column: Sidebar -->
+        <aside>
+            <div class="sidebar-card">
+                <div class="section-title">
+                    <h2>角色热度榜</h2>
+                </div>
+                <ul class="rank-list">
+                    <li>
+                        <span class="rank-num">1</span>
+                        <span class="rank-title">红鸟 (愤怒的领袖)</span>
+                        <span class="rank-score">98%</span>
+                    </li>
+                    <li>
+                        <span class="rank-num">2</span>
+                        <span class="rank-title">蓝鸟 (分裂专家)</span>
+                        <span class="rank-score">85%</span>
+                    </li>
+                    <li>
+                        <span class="rank-num">3</span>
+                        <span class="rank-title">大白鹅 (白色炸弹)</span>
+                        <span class="rank-score">82%</span>
+                    </li>
+                    <li>
+                        <span class="rank-num">4</span>
+                        <span class="rank-title">黑猪 (偷蛋贼)</span>
+                        <span class="rank-score">75%</span>
+                    </li>
+                    <li>
+                        <span class="rank-num">5</span>
+                        <span class="rank-title">大王猪 (终极BOSS)</span>
+                        <span class="rank-score">70%</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="section-title">
+                    <h2>游戏技巧</h2>
+                </div>
+                <p style="font-size: 0.9rem; margin-bottom: 10px;">想要获得三星评价？注意观察建筑结构，寻找最薄弱的支撑点。</p>
+                <div class="tips-box">
+                    <strong>💡 小贴士：</strong><br>
+                    利用弹弓的弹性势能，不要盲目追求高抛物线。点击屏幕释放小鸟后，再次点击可以触发黄鸟加速或白鸟炸弹效果。
+                </div>
+            </div>
+
+            <div class="sidebar-card">
+                <div class="section-title">
+                    <h2>最新资讯</h2>
+                </div>
+                <ul class="rank-list">
+                    <li>
+                        <span class="rank-title" style="font-size: 0.85rem;">《愤怒的小鸟2》更新了新关卡</span>
+                    </li>
+                    <li>
+                        <span class="rank-title" style="font-size: 0.85rem;">官方推出2024年周边系列</span>
+                    </li>
+                    <li>
+                        <span class="rank-title" style="font-size: 0.85rem;">愤怒的小鸟主题公园即将开幕</span>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <h4>关于我们</h4>
+            <p style="font-size: 0.9rem; line-height: 1.6;">
+                本站致力于收集和整理关于“愤怒的小鸟”卡通动漫的资料，为玩家提供最新的游戏攻略、角色解析及同人分享。
+            </p>
+        </div>
+        <div class="footer-col">
+            <h4>快速导航</h4>
+            <ul>
+                <li><a href="#">角色图鉴</a></li>
+                <li><a href="#">游戏攻略</a></li>
+                <li><a href="#">周边商城</a></li>
+                <li><a href="#">联系站长</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>友情链接</h4>
+            <ul>
+                <li><a href="#">Rovio 官方</a></li>
+                <li><a href="#">游戏下载站</a></li>
+                <li><a href="#">动漫资讯网</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>关注我们</h4>
+            <p style="font-size: 0.9rem;">扫描二维码获取更多资讯</p>
+            <div style="margin-top: 10px; width: 100px; height: 100px; background: #555; display: flex; align-items: center; justify-content: center; color: #fff;">
+                QR Code
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 愤怒的小鸟卡通动漫资讯站. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+                                           </html>
